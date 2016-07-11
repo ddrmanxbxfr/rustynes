@@ -1,10 +1,13 @@
-mod cartridge;
+mod console;
+mod utils;
+
+use console::cartridge;
 use std::env;
 
 fn main() {
     let filename: Option<String> = env::args().skip(1).next();
     match filename {
-        Some(value) => cartridge::prepare_rom_data(&value),
+        Some(value) => cartridge::load_content(&value),
         None => print_usage()
     }
 }
