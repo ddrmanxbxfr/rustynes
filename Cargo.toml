@@ -1,0 +1,6 @@
+[package]
+name = "rustynes"
+version = "0.1.0"
+authors = ["Mathieu Rheaume <mathieu@codingrhemes.com>"]
+
+[dependencies]
